@@ -16,6 +16,7 @@ ADD . /app
 # STEP 4: Set working directory to /app so we can execute commands in it
 WORKDIR /app
 
+# steps to install requirements.txt
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
